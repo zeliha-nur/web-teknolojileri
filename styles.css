@@ -8,6 +8,8 @@ main {
     font-size: 1.2em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     line-height: 1.6;
+    width: 50%;
+    justify-self: center;
 }
 
 main :hover {
