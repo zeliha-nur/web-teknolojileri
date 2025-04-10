@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebTek25 Lab Nisan 10 2025</title>
+    <script>
+      // Store the original title of the page
+      const originalTitle = document.title;
+      const inactiveTitle = "Sayfamız Seni Özledi!"; // The title to show when inactive
+   
+      // Option 1: Using the 'blur' event (when the window loses focus) and 'focus' (when it gains focus)
+      // window.addEventListener('blur', () => {
+      //   document.title = inactiveTitle;
+      // });
+   
+      // window.addEventListener('focus', () => {
+      //   document.title = originalTitle;
+      // });
+   
+      // Option 2: Using the 'visibilitychange' event (more reliable)
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+          // Page is now hidden/inactive
+          document.title = inactiveTitle;
+        } else {
+          // Page is now visible/active
+          document.title = originalTitle;
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 style="background-color: powderblue; color: blue">
+        Welcome to WebTek25 Lab 27 Mart 2025
+      </h1>
+    </header>
+    <main>
+      <p style="background-color: tomato">
+        This is a basic HTML template to get started.
+      </p>
+      <h1 style="font-family:'Courier New', Courier, monospace;">This is heading 1</h1>
+      <p>This is some text.</p>
+      <hr />
+      <h2 style="text-align: center;">This is heading 2</h2>
+      <h2 style="font-size: 200%;">This is heading 2</h2>
+      <p style="font-size: 160%;text-align: center">This is some other text.</p>
+      <p style="text-align:end; color:black">This <b>is some</b> other text. <br>
+        buraya da <mark>bir şeyler</mark> yazdık. <strong>strong özelliği</strong> önemlidir.<br>
+        <em>vurguladığımız  <b>em</b> özelliği</em> de <small> <del>önemlidir</del> mühimdir.</small>
+      </p>
+      <hr />
+      <p>Here is a quote from WWF's website:</p>
+ 
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+      </blockquote>
+ 
+      <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+      <!-- burada bir yourm olsa iyi olurdu.
+       jkjakjsd ajda -->
+     
+      <address>
+        Written by John Doe.<br>
+        Visit us at: yalova<br>
+        Example.com<br>
+        Box 564, yalovaland<br>
+        USA
+        </address>
+ 
+        <p>This <!-- great text --> is a paragraph.</p>
+ 
+        <p><a href="https://www.w3schools.com/" target="_parent">Visit W3Schools.com!</a></p>
+        <p><a href="https://www.w3schools.com/" target="_top">Visit W3Schools.com!</a></p>
+        <p><a href="https://www.w3schools.com/" target="_blank">Visit W3Schools.com!</a></p>
+ 
+        <p><a href="mailto:someone@example.com" title="someone@example.com">Send email</a></p>
+ 
+        <p><button onclick="document.location='mart27.html'">HTML Tutorial</button></p>
+ 
+        <p><a href="bookmark.html#C10">Jump to Chapter 10</a></p>
+    </main>
+    <footer>
+      <p>&copy; 2023 WebTek25 Lab</p>
+    </footer>
+  </body>
+</html>
