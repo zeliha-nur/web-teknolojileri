@@ -3,7 +3,7 @@ main {
     color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
     font-size: 1.2em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -14,5 +14,35 @@ main {
 
 main :hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
 }
+
+.merkezi {
+    width: 300px;
+    margin:  30px auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f8f7f2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: left;
+  }
+  div {
+    color:black;
+    width: 300px;
+    margin:  30px auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f8f7f2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: left;
+  }
+  .mycontainer {
+    width:100%;
+    overflow:auto;
+  }
+  .mycontainer div {
+    width:33%;
+    float:left;
+    color: rgb(154, 6, 6) !important;
+  }
